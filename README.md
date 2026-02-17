@@ -355,6 +355,8 @@ RestartSec=5s
 
 [Install]
 WantedBy=multi-user.target
+# On headless servers, use this target instead if your GPU is not detected
+# WantedBy=graphical.target
 ```
 4. Enable the service
 ```bash

@@ -1,5 +1,5 @@
 //! Display module for:
-//! - AK700
+//! - AK700 DIGITAL NYX
 //! - ASSASSIN IV VC VISION
 //! - LQ240
 //! - LQ360
