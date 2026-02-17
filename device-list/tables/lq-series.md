@@ -1,4 +1,4 @@
-# LQ Series / ASSASSIN IV Mapping Table
+# LQ Series / ASSASSIN IV / AK700 Mapping Table
 <table>
     <tr>
         <th>DATA BYTE</th>

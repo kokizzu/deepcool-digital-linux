@@ -1,4 +1,5 @@
 //! Display module for:
+//! - AK700
 //! - ASSASSIN IV VC VISION
 //! - LQ240
 //! - LQ360

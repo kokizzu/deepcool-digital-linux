@@ -181,6 +181,10 @@ updated, because the Nixpkgs binary cache will not be able to provide you cached
         <td align="center">✅</td>
     </tr>
     <tr>
+        <td>AK700 DIGITAL NYX</td>
+        <td align="center">✅</td>
+    </tr>
+    <tr>
         <td>ASSASSIN IV VC VISION</td>
         <td align="center">✅</td>
     </tr>
