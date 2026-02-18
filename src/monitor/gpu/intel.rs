@@ -1,5 +1,6 @@
 //! Reads live GPU data from the Linux kernel.
 
+use crate::warning;
 use std::fs::{read_dir, read_to_string};
 
 pub struct Gpu {
@@ -22,6 +23,8 @@ impl Gpu {
             None => {
                 // If no HWMON found, we cannot report anything useful.
                 // We return None so main.rs can fallback to CPU-only.
+                warning!("Intel GPU sensor not found");
+                eprintln!("         Defaulting to CPU-only mode.");
                 return None;
             }
         };
@@ -29,9 +32,8 @@ impl Gpu {
         // If using fallback "coretemp", disable usage stats (force 0%)
         if name == "Intel Xe (Shared)" {
             drm_dir = None;
+            warning!("Intel Xe driver is not fully supported on iGPUs yet");
         }
-
-        println!("Intel GPU Sensor found at: {}", hwmon_dir);
 
         Some(Gpu {
             drm_dir,
